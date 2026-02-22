@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>BMI Tracker Web Application</title>
+<link rel="stylesheet" href="bmi.css">
+</head>
+<body>
+
+<div class="container">
+
+    <div class="header">
+        <h2>BMI Tracker</h2>
+        <p>Check your health & fitness status</p>
+    </div>
+
+    <div class="input-card">
+        <input type="number" id="height" placeholder="Height (cm)">
+        <input type="number" id="weight" placeholder="Weight (kg)">
+        <button onclick="calculateBMI()">Calculate BMI</button>
+    </div>
+
+    <div class="result-card">
+        <div id="result" class="status"></div>
+        <div id="tips"></div>
+    </div>
+
+    <div id="recommendations">
+
+        <h3>Recommended Exercises</h3>
+        <p id="exercise"></p>
+
+        <h3>Diet Plan</h3>
+        <p id="diet"></p>
+
+        <h3>Suggestions</h3>
+        <p id="suggestions"></p>
+
+    </div>
+
+</div>
+
+<script src="bmi.js"></script>
+</body>
+</html>
